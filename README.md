@@ -9,3 +9,21 @@ Those tokens cannot be safely used in some DeFi dApps such as Balancer or Uniswa
 
 The most famous example of such tokens is OMG Network Token ([OMG](https://etherscan.io/token/0xd26114cd6EE289AccF82350c8d8487fedB8A0C07)), a token with a Market Cap of more than 400 million USD equivalent. That is why this repository will start with this token.
 
+# Instructions
+
+## Install dependencies and compile
+
+```
+npm install
+```
+
+```
+npm run compile
+```
+
+## Run tests
+
+```
+npm test
+```
+

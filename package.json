@@ -1,0 +1,38 @@
+{
+  "name": "baderc20-wrappers",
+  "version": "1.0.0",
+  "description": "Wrapped implementations of BadERC20 tokens",
+  "main": "test/womg.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "npm run compile-base-tokens && npm run compile-wrapper-tokens",
+    "compile-wrapper-tokens": "truffle compile",
+    "compile-base-tokens": "truffle compile --contracts_directory legacy-contracts --config truffle-config-omg.js",
+    "test": "truffle test test/womg.js --compiler none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neozaru/BadERC20-Wrappers.git"
+  },
+  "keywords": [
+    "baderc20",
+    "wrapper",
+    "erc20",
+    "badtokens",
+    "omg",
+    "womg"
+  ],
+  "author": "neozaru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Neozaru/BadERC20-Wrappers/issues"
+  },
+  "homepage": "https://github.com/Neozaru/BadERC20-Wrappers#readme",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^3.2.0",
+    "truffle-assertions": "^0.9.2",
+    "erc20-test-suite": "^0.2.1"
+  }
+}
